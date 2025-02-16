@@ -13,8 +13,12 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType( "text/html" );
         PrintWriter out = response.getWriter();
-        out.println( "<html><body>" );
-        out.println( "<h1>Bonjour</h1>" );
-        out.println( "</body></html>" );
+        out.println("<!DOCTYPE html>");
+        out.println("<html>");
+        out.println("<head><meta charset='UTF-8'></head>");
+        out.println("<body>");
+        out.println("<h1>Bonjour Alain Trad</h1>");
+        out.println("</body>");
+        out.println("</html>");
     }
 }
